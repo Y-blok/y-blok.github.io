@@ -1,2 +1,2 @@
-# Y-blok.github.io
-Y-blok's website/portfolio
+# y-blok.github.io
+y-blok's website/portfolio
