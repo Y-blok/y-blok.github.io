@@ -1,45 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Y_blok</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Y_blok</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 <body>
 
 
 <div class="container">
-    <div class="jumbotron">
-        <div class="row">
+    <div class="mt-4 p-5 bg-dark-subtle text-dark-emphasis rounded">
+        <div class="row justify-content-center">
             <div class="col-sm-6">
                 <h1>Kolby Chong </h1>
                 <h3>Y_blok <small>(my name backwards)</small></h3>
+                <div class="col-sm-2">
+                    <img src="media/pfp_noback.png" class="img-fluid" alt="Profile Pic" style="min-width: 125px;">
+                </div>
             </div>
-            <div class="col-sm-6">
-                <ul class="list-group">
-                    <a href="https://www.youtube.com/@therealyblok" class="list-group-item">YouTube</a>
-                    <a href="https://www.tiktok.com/@y.blok" class="list-group-item">TikTok</a>
-                    <a href="https://www.twitch.tv/y_blok" class="list-group-item">Twitch</a>
-                    <a href="https://www.instagram.com/y.blok/" class="list-group-item">Instagram</a>
-                </ul>
+            <div class="col-sm-4">
+                <div class="d-grid gap-1 mx-auto">
+                    <a href="https://www.youtube.com/@therealyblok" class="bg-light border btn btn-lg" role="button">YouTube</a>
+                    <a href="https://www.tiktok.com/@y.blok" class="bg-light border btn btn-lg" role="button">TikTok</a>
+                    <a href="https://www.twitch.tv/y_blok" class="bg-light border btn btn-lg" role="button">Twitch</a>
+                    <a href="https://www.instagram.com/y.blok/" class="bg-light border btn btn-lg" role="button">Instagram</a>
+                </div>
+                
             </div>
         </div> 
     </div>
 
-    <h1>This page is under construction!</h1>
+    <div class="p-3 mt-2 mb-2 bg-info rounded"><h3>This page is under construction!</h3></div>
 
-    <ul class="nav nav-tabs">
-        <li class="active"><a data-toggle="tab" href="#about">About Me</a></li>
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#about" type="button" role="tab" aria-controls="about" aria-selected="true">Home</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="socials-tab" data-bs-toggle="tab" data-bs-target="#socials" type="button" role="tab" aria-controls="socials" aria-selected="false">Profile</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="menu2-tab" data-bs-toggle="tab" data-bs-target="#menu2" type="button" role="tab" aria-controls="menu2" aria-selected="false">Secret Tab</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Contact</button>
+        </li>
+    </ul>
+
+    <!-- <ul class="nav nav-tabs">
+        <li class="nav-item active"><a data-toggle="tab" href="#about">About Me</a></li>
         <li><a data-toggle="tab" href="#socials">Social Media</a></li>
         <li><a data-toggle="tab" href="#menu2">Secret Tab</a></li>
         <li><a data-toggle="tab" href="#contact">Contact Me</a></li>
-    </ul>
+    </ul> -->
 
-    <div class="tab-content" style="margin-bottom: 1cm;">
-        <div id="about" class="tab-pane fade in active">
+    <div class="tab-content mt-3">
+        <div id="about" class="tab-pane fade show active">
             <h3>About Me</h3>
             <p>Hi there! I'm Kolby Chong. It's nice to meet you. Or if I already know you, thanks for testing my site. Either way, welcome!</p>
             <p>A little more about me. I'm from Toronto, Canada (actually from Richmond Hill which is near Toronto) and I graduated from the University of Toronto in 2024 with an Honours Bachelor's Degree in Computer Science and Statistics with a Focus in Game Design. My age is... oh gee oh gosh... I'm 24... unc status :(</p>
@@ -48,7 +65,7 @@
         <div id="socials" class="tab-pane fade">
             <h3>Social Media</h3>
             <p>Since the start of 2025, I have been infrequently posting things on social media for fun. It's mostly silly jokes and random things I do without much consistency.</p>
-            <p>The more I post though, hopefully, the better I'll be. It's mostly a creative outlet to do unserious things with.</p>
+            <p>It's mostly a creative outlet to do unserious things with. The more I post though, hopefully, the better I'll be.</p>
             <ul class="list-group">
                 <a href="https://www.youtube.com/@therealyblok" class="list-group-item">YouTube</a>
                 <a href="https://www.tiktok.com/@y.blok" class="list-group-item">TikTok</a>
@@ -68,9 +85,10 @@
     </div>
     
 
-    <p>This is a static GitHub page built with Bootstrap</p>
+    <div class="p-3 mb-2 bg-info-subtle text-info-emphasis">This is a static GitHub page built with Bootstrap</div>
 </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
 </body>
 </html>
